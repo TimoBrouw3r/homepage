@@ -1,0 +1,13 @@
+body{
+  background: #123A3C;
+  color: #EDB66D;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 250%;
+  margin: 25px;
+
+}
+
+.time{
+  font-size: 125%;
+}
