@@ -1,6 +1,6 @@
 body{
-  background: #123A3C;
-  color: #EDB66D;
+  background-image: url(../images/bg.jpg);
+  color: #FA9E0C;
   text-align: center;
   font-family: sans-serif;
   font-size: 250%;
@@ -10,4 +10,63 @@ body{
 
 .time{
   font-size: 125%;
+}
+
+.search input{
+  border: 2px;
+  border-style: groove;
+  background-color:  rgba(255,255,255,0.125);
+  border-color: black;
+  height: 30px;
+  width: 40%;
+  border-radius: 7px;
+  color: #FA9E0C;
+}
+
+.search input:focus {
+  background-color: rgba(255,255,255,0.25);
+  outline: none;
+
+}
+::placeholder{
+  color: #FA9E0C;
+}
+
+.tables{
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto ;
+  grid-template-rows: 100px 75px 75px 75px;
+  justify-content:
+}
+
+.griditem{
+  transform: scale(0.9);
+  background-color:  rgba(53, 67, 68, 0.75);
+  transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+
+.griditem:hover{
+  background-color: rgba(53, 67, 68, 1);
+  box-shadow: 15px 15px 5px rgb(0, 0, 0, 0.75);
+  transform: scale(0.95);
+}
+
+#rec, #prod{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+  }
+
+a:link, a:visited, a:active{
+  color: #FA9E0C;
+  text-decoration: none;
+
+}
+
+a:hover{
+  text-decoration: underline;
 }

@@ -1,17 +1,21 @@
 <head>
   <title>Grey Startpage</title>
   <link rel="stylesheet" href="styles/mainstyle.css">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
   <p>
 
-    <iframe src="https://duckduckgo.com/search.html?prefill=Search For Things" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+    <form action="https://duckduckgo.com/?q" id="ddgsearch" class="search" action="index.html" method="get" target="_blank">
+      <input type="search" name="q" placeholder="Search On DDG"  id="ddg">
+
+    </form>
 
 
   </p>
   <p>
-    Hello Grey, it is currently:
+    Hello Grey, Current Time Is:
   </p>
   <p>
     <div class="time" id="Clock">
@@ -40,10 +44,21 @@
         currentTime();
       </script>
     </div>
-  </p>
-  <div class="trello">
+    <div class="tables">
+      <div class="griditem" id="rec">recreation</div>
+      <div class="griditem" id="prod">productivity</div>
+      <div class="griditem"><a href="https://reddit.com" target="_blank">Reddit</a></div>
+      <div class="griditem"><a href="https://github.com/" target="_blank"> GitHub</a></div>
+      <div class="griditem"><a href="https://twitter.com/home" target="_blank">Twitter</a></div>
+      <div class="griditem"><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></div>
 
-  </div>
+
+
+
+
+
+
+    </div>
 
 
 
