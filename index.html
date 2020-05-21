@@ -5,7 +5,7 @@
 </head>
 
 <body>
-  <p>
+  <p class="Big">
 
     <form action="https://duckduckgo.com/?q" id="ddgsearch" class="search" action="index.html" method="get" target="_blank">
       <input type="search" name="q" placeholder="Search On DDG"  id="ddg">
@@ -13,45 +13,34 @@
     </form>
 
 
+
+  <p class="Medium">
+    Hello Grey, It Is:
   </p>
   <p>
-    Hello Grey, Current Time Is:
-  </p>
-  <p>
-    <div class="time" id="Clock">
-      <script type="text/javascript">
-        function currentTime() {
-          var date = new Date();
-          var hour = date.getHours();
-          var min = date.getMinutes();
-          var sec = date.getSeconds();
-          hour = updateTime(hour);
-          min = updateTime(min);
-          sec = updateTime(sec);
-          document.getElementById("Clock").innerText = hour + " : " + min + " : " + sec;
-            var t = setTimeout(function(){ currentTime() }, 1000);
-        }
+    <div class="Big" id="Clock">
+      <script src="scripts/time.js" charset="utf-8"></script>
+      </div>
+      <div id="date">
+      <script src="scripts/time.js" charset="utf-8"></script>
+      </div>
 
-        function updateTime(k) {
-          if (k < 10) {
-            return "0" + k;
-          }
-          else {
-            return k;
-          }
-        }
-
-        currentTime();
-      </script>
-    </div>
     <div class="tables">
-      <div class="griditem" id="rec">recreation</div>
-      <div class="griditem" id="prod">productivity</div>
-      <div class="griditem"><a href="https://reddit.com" target="_blank">Reddit</a></div>
-      <div class="griditem"><a href="https://github.com/" target="_blank"> GitHub</a></div>
-      <div class="griditem"><a href="https://twitter.com/home" target="_blank">Twitter</a></div>
-      <div class="griditem"><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></div>
-      <div class="griditem"><a href="https://www.youtube.com/" target="_blank">Youtube</a></div>
+      <div class="griditem">
+        <h4>recreation</h4>
+
+          <p class="link"><a href="https://reddit.com" target="_blank" >Reddit</a> </p>
+          <p class="link"><a href="https://twitter.com/home" target="_blank" >Twitter</a> </p>
+          <p class="link"><a href="https://www.youtube.com/" target="_blank" >Youtube</a> </p>
+          <p class="link"><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></p>
+        </div>
+        <div class="griditem">
+          <h4>productivity</h4>
+          <p class="link"><a href="https://github.com/" target="_blank""> GitHub</a> </p>
+          <p class="link"><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> </p>
+          <p class="link"><a href="https://veluwscollege.itslearning.com/main.aspx?TextURL=CourseCards" target="_blank">School Site</a></p>
+        </div>
+      </div>
 
 
 
@@ -59,7 +48,7 @@
 
 
 
-    </div>
+
 
 
 
