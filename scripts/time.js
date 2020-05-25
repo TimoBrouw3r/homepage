@@ -33,19 +33,19 @@ function currentDayPiece() {
   var date = new Date();
   var hour = date.getHours();
   var string = checkDayPiece(hour)
-  document.getElementById("greeting").innerText = "Good " + string + " Grey";
+  document.getElementById("greeting").innerText =  string + " Grey";
   var t = setTimeout(function(){currentDayPiece()}, 1000);
 }
 
 function checkDayPiece(hour) {
   if (parseInt(hour) < 6){
-      return "Night";
+      return "Go sleep";
     } else if (parseInt(hour) < 12) {
-      return "Morning";
+      return "Good Morning";
     } else if (parseInt(hour) < 18) {
-      return "Afternoon";
+      return "Good Afternoon";
     } else if (parseInt(hour) < 24) {
-      return "Evening";
+      return "Good Evening";
     } else {
       return "UNDEFINED";
   }
