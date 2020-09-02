@@ -73,7 +73,7 @@ body{
 
 .griditem:hover{
   background-color: rgba(44,47,51, 1);
-  box-shadow: 15px 15px 5px rgb(0, 0, 0, 0.75);
+  box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.75);
   transform: scale(1.05);
 }
 .link{
