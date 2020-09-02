@@ -33,7 +33,7 @@ function currentDayPiece() {
   var date = new Date();
   var hour = date.getHours();
   var string = checkDayPiece(hour)
-  document.getElementById("greeting").innerText =  string + " Grey";
+  document.getElementById("greeting").innerText =  string;
   var t = setTimeout(function(){currentDayPiece()}, 1000);
 }
 
